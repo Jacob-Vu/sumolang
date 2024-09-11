@@ -1,48 +1,48 @@
-class ASTNode:
-    pass
+# class ASTNode:
+#     pass
 
-class Program(ASTNode):
-    def __init__(self, var_declarations, statements):
-        self.var_declarations = var_declarations
-        self.statements = statements
+# class Program(ASTNode):
+#     def __init__(self, var_declarations, statements):
+#         self.var_declarations = var_declarations
+#         self.statements = statements
 
-class VarDeclaration(ASTNode):
-    def __init__(self, var_list):
-        self.var_list = var_list
+# class VarDeclaration(ASTNode):
+#     def __init__(self, var_list):
+#         self.var_list = var_list
 
-class Assignment(ASTNode):
-    def __init__(self, var_name, expression):
-        self.var_name = var_name
-        self.expression = expression
+# class Assignment(ASTNode):
+#     def __init__(self, var_name, expression):
+#         self.var_name = var_name
+#         self.expression = expression
 
-class ForLoop(ASTNode):
-    def __init__(self, var_name, start_expr, end_expr, statements):
-        self.var_name = var_name
-        self.start_expr = start_expr
-        self.end_expr = end_expr
-        self.statements = statements
+# class ForLoop(ASTNode):
+#     def __init__(self, var_name, start_expr, end_expr, statements):
+#         self.var_name = var_name
+#         self.start_expr = start_expr
+#         self.end_expr = end_expr
+#         self.statements = statements
 
-class Read(ASTNode):
-    def __init__(self, var_name):
-        self.var_name = var_name
+# class Read(ASTNode):
+#     def __init__(self, var_name):
+#         self.var_name = var_name
 
-class Write(ASTNode):
-    def __init__(self, expression):
-        self.expression = expression
+# class Write(ASTNode):
+#     def __init__(self, expression):
+#         self.expression = expression
 
-class BinaryOperation(ASTNode):
-    def __init__(self, left, operator, right):
-        self.left = left
-        self.operator = operator
-        self.right = right
+# class BinaryOperation(ASTNode):
+#     def __init__(self, left, operator, right):
+#         self.left = left
+#         self.operator = operator
+#         self.right = right
 
-class Number(ASTNode):
-    def __init__(self, value):
-        self.value = value
+# class Number(ASTNode):
+#     def __init__(self, value):
+#         self.value = value
 
-class Variable(ASTNode):
-    def __init__(self, name):
-        self.name = name
+# class Variable(ASTNode):
+#     def __init__(self, name):
+#         self.name = name
         
 class Parser:
     def __init__(self, tokens):
